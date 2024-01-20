@@ -1,0 +1,37 @@
+### HOME PAGE
+GET http://localhost:3000/
+
+### MOVIES
+GET http://localhost:3000/movies
+
+### MOVIE BY ID
+GET http://localhost:3000/movies/142722db-6a82-415f-8f35-733ee045d363
+
+### MOVIES BY GENRE
+GET http://localhost:3000/movies?search=The&genre=Sci-Fi
+
+### CREATE MOVIE
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Endgame",
+    "year": 2017,
+    "director": "Joss Whedon",
+    "duration": 150,
+    "poster": "https://img.fruugo.com/product/7/41/14532417_max.jpg",
+    "genre": [
+      "Action",
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "rate": 10
+  }
+
+### MODIFY AN EXISTING MOVIE
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "year": 2000
+}
