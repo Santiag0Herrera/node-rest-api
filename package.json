@@ -4,7 +4,7 @@
   "description": "This is my first rest-api with node.js",
   "main": "app.mjs",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "PORT=3000 nodemon app.mjs"
   },
