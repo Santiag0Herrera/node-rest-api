@@ -1,18 +1,16 @@
-### HOME PAGE
-GET http://localhost:3000/
-
 ### MOVIES
 GET http://localhost:3000/movies
 
 ### MOVIE BY ID
-GET http://localhost:3000/movies/142722db-6a82-415f-8f35-733ee045d363
+GET http://localhost:3000/movies/bb79862c-be5a-11ee-af20-3e79a5ce1913
 
-### MOVIES BY GENRE
-GET http://localhost:3000/movies?search=The&genre=Sci-Fi
+### MOVIES BY QUERY
+GET http://localhost:3000/movies?genre=Crime
 
 ### CREATE MOVIE
 POST http://localhost:3000/movies
 Content-Type: application/json
+x-user-key-name: notSanti
 
 {
     "title": "Endgame",
@@ -35,3 +33,6 @@ Content-Type: application/json
 {
     "year": 2000
 }
+
+### MOVIE DELETE
+DELETE http://localhost:3000/movies/b9b9cfd2-3e64-44d5-9fa7-4c7e2a45d21b
